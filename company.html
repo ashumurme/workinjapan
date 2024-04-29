@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:rgb(240, 191, 240);">
+
+
+    <nav class="navbar navbar-expand-lg navbar-yellow background-color-light green">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Search Companies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search  Company & Location" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+   
+    <div class="filters">
+        <label for="jobType">Job Type:</label>
+        <select id="jobType">
+            <option value="all">All</option>
+            <option value="remote">Work from Home</option>
+            <option value="office">Work from Office</option>
+        </select>
+
+        <button onclick="filterCompanies()">Apply Filters</button>
+    </div>
+   
+        <section id="companyList">
+            <h2>MNC's Companies</h2>
+            <ul id="companies">
+            <li>Wipro</li>
+            <li>Accenture</li>
+            <li>Capgemini</li>
+            <li>Baker Hughes</li>
+            <li>Qualcomo</li>
+                <!-- Companies will be displayed here -->
+            </ul>
+        </section>
+        <section id="companyList">
+            <h2>Startup Companies</h2>
+            <ul id="companies">
+            <li>SpaceX</li>
+            <li>Tesla</li>
+            <li>OpenSpace</li>
+            <li>OpenAI</li>
+            <li>Glossier</li>
+                
+            </ul>
+        </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
